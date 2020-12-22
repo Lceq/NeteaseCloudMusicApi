@@ -47,6 +47,7 @@
       cookieToken = res.data.cookie
     }
     async function upload(file) {
+      console.log(file)
       var formData = new FormData()
       formData.append('imgFile', file)
       const imgSize = await getImgSize(file)
